@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-xl-6">
+                <div class="image">
+
+                    <img src="https://miro.medium.com/v2/resize:fit:1200/1*fZe0YqjkFmIMrKLb7luLBQ.png" class="image w-100" />
+                    <h1 class="image-heading">driggle</h1>
+                    <p class="image-description">Discover the worlds top
+                        Designers & Creatives.</p>
+                </div>
+            </div>
+            <div class="col-md-6 ">
+                <div class="form">
+                    <h1 class="form-heading">Already a member?<span style="color:blue">Sign in</span></h1>
+                    <p class="form-description">Sign up to Dribble</p>
+                    <form id="myForm">
+                        <p id="usernameErrMsg" class="error-message"></p>
+                        <div class="form-row">
+                            <div class="col-12">
+                                <div class="mb-3">
+                                    <label for="name">Name</label>
+                                    <input type="text" class="form-control" id="name" />
+                                    <p id="nameErrMsg" class="error-message"></p>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="mb-3">
+                                    <label for="username">Username</label>
+                                    <input type="text" class="form-control" id="username" />
+                                    <p id="usernameErrMsg" class="error-message"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email">Email</label>
+                            <input type="text" class="form-control" id="email" />
+                            <p id="emailErrMsg" class="error-message"></p>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password">password</label>
+                            <input type="text" class="form-control" id="password" placeholder="6+ characters" />
+                            <p id="passwordErrMsg" class="error-message"></p>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">creating an account means you're okay with our <span style="color:blue">Terms of service , privacy Policy,</span> and our default <span style="color:blue"> Notification settings</span></label>
+                        </div>
+
+                        <button class="btn ">Create Account</button>
+                        <P class=sub-description>This site is protected by reCAPTCHA and the Google <span style="color:blue">Privacy Policy</span> and <span style="color:blue">Terms of service</span> apply</P>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+
+</html>
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 20px;
+}
+
+.form-control {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Roboto";
+}
+
+.form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    margin: 20px;
+}
+
+.form-heading {
+    font-family: "Roboto";
+    font-size: 20px;
+    font-weight: bold;
+    text-align: right;
+
+}
+
+.form-description {
+    font-family: "Roboto";
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.btn {
+    background-color: #ff1493;
+}
+
+.error-message {
+    color: red;
+}
+
+.sub-description {
+    padding: 10px;
+}
+
+.image-heading {
+    position: absolute;
+    top: 80px;
+    left: 90px;
+    color: white;
+    font-size: 24px;
+    z-index: 1;
+    font-family: cursive;
+    color: #555555;
+}
+
+.image-description {
+    position: absolute;
+    text-align: center;
+    padding: 20px;
+    top: 100px;
+    left: 100px;
+    color: white;
+    font-size: 24px;
+    z-index: 1;
+    font-family: "Roboto";
+    font-weight: bold;
+    color: #555555;
+}
