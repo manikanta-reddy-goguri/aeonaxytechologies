@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <h1 class="heading">dribbble</h1>
+    <div class="container">
+        <h1 class="container-heading">Welcome! Let's create your profile</h1>
+        <p class="container-description">Let others get to know you better! You can do these later</p>
+        <div class="avatar-container">
+            <div class="avatar-preview">
+                <h1 class="image-heading">Add an Avatar</h1>
+                <img id="avatar-img" src="https://cdn0.iconfinder.com/data/icons/fillicons-information-technology/1550/programmer_software_developer-1024.png" alt="Avatar" />
+
+                <span class="avatar-overlay">
+                    <input type="file" id="avatar-input" accept="image/*">
+                </span>
+            </div>
+            <p>Or choose one of our defaults</p>
+        </div>
+        <div class="location-container">
+            <label for="location-input">Add location</label>
+            <input type="text" class="form-control" id="location-input" placeholder="Enter your location" />
+        </div>
+        <button id="next-btn">Next</button>
+    </div>
+
+</body>
+
+</html>
+
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    text-align: center;
+}
+
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.avatar-container {
+    margin-bottom: 20px;
+
+}
+
+.avatar {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.location-container {
+    margin-bottom: 20px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 25px;
+    margin: 20px;
+}
+
+
+
+#next-btn {
+    background-color: pink;
+    color: white;
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    width: 20%;
+
+}
+
+.heading {
+    font-family: 'Caveat', cursive;
+    font-size: 30px;
+    color: #ff1493;
+    text-align: left;
+    padding: 20px;
+}
+
+.container-heading {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.container-description {
+    text-align: left;
+    padding: 10px;
+    margin: 10px;
+}
+
+.image-heading {
+    text-align: left;
+    font-size: 25px;
+    padding: 10px;
+    margin: 10px;
+    font-weight: bold;
+}
+
+#avatar-img {
+    border-radius: 50%;
+    height: 20vh;
+}
+
+#location-input {
+    width: 40%;
+}
